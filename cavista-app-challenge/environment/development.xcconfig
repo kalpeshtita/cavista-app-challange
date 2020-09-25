@@ -1,0 +1,12 @@
+//
+//  development.xcconfig
+//  cavista-app-challenge
+//
+//  Created by Kalpesh Tita on 25/09/20.
+//  Copyright © 2020 Kalpesh Tita. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+server_url          = raw.githubusercontent.com/AxxessTech/Mobile-Projects/master
+protocol            = https
