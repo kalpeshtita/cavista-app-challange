@@ -14,7 +14,6 @@
 		F634E83E251DEBB400172A46 /* ModelAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634E83D251DEBB400172A46 /* ModelAPIResponse.swift */; };
 		F634E844251DFA9B00172A46 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634E843251DFA9B00172A46 /* UserPost.swift */; };
 		F63CC468251DCC15002F6AEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CC467251DCC15002F6AEF /* AppDelegate.swift */; };
-		F63CC46A251DCC15002F6AEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CC469251DCC15002F6AEF /* SceneDelegate.swift */; };
 		F63CC46C251DCC15002F6AEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CC46B251DCC15002F6AEF /* ViewController.swift */; };
 		F63CC46F251DCC15002F6AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63CC46D251DCC15002F6AEF /* Main.storyboard */; };
 		F63CC471251DCC17002F6AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63CC470251DCC17002F6AEF /* Assets.xcassets */; };
@@ -52,12 +51,9 @@
 		F1542BBE3FFAA6BE04D90A1B /* Pods-cavista-app-challenge.devlopment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cavista-app-challenge.devlopment.xcconfig"; path = "Target Support Files/Pods-cavista-app-challenge/Pods-cavista-app-challenge.devlopment.xcconfig"; sourceTree = "<group>"; };
 		F634E839251DEA3A00172A46 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
 		F634E83D251DEBB400172A46 /* ModelAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAPIResponse.swift; sourceTree = "<group>"; };
-		F634E840251DF48D00172A46 /* development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = development.xcconfig; sourceTree = "<group>"; };
-		F634E841251DF49D00172A46 /* production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = production.xcconfig; sourceTree = "<group>"; };
 		F634E843251DFA9B00172A46 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		F63CC464251DCC15002F6AEF /* cavista-app-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cavista-app-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63CC467251DCC15002F6AEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F63CC469251DCC15002F6AEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F63CC46B251DCC15002F6AEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F63CC46E251DCC15002F6AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F63CC470251DCC17002F6AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1843B1D72522007A0066F217 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F63CC46B251DCC15002F6AEF /* ViewController.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
 		983F4DE288B7F3FB41C4A78C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,15 +133,6 @@
 				F634E839251DEA3A00172A46 /* APIRequestManager.swift */,
 			);
 			path = helper;
-			sourceTree = "<group>";
-		};
-		F634E83B251DEB6900172A46 /* environment */ = {
-			isa = PBXGroup;
-			children = (
-				F634E840251DF48D00172A46 /* development.xcconfig */,
-				F634E841251DF49D00172A46 /* production.xcconfig */,
-			);
-			path = environment;
 			sourceTree = "<group>";
 		};
 		F634E83C251DEB8E00172A46 /* entity */ = {
@@ -181,12 +176,10 @@
 		F63CC466251DCC15002F6AEF /* cavista-app-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				1843B1D72522007A0066F217 /* presenter */,
 				F634E83F251DF33700172A46 /* entity */,
-				F634E83B251DEB6900172A46 /* environment */,
 				F634E838251DEA1C00172A46 /* helper */,
 				F63CC467251DCC15002F6AEF /* AppDelegate.swift */,
-				F63CC469251DCC15002F6AEF /* SceneDelegate.swift */,
-				F63CC46B251DCC15002F6AEF /* ViewController.swift */,
 				F63CC46D251DCC15002F6AEF /* Main.storyboard */,
 				F63CC470251DCC17002F6AEF /* Assets.xcassets */,
 				F63CC472251DCC17002F6AEF /* LaunchScreen.storyboard */,
@@ -457,7 +450,6 @@
 				F634E844251DFA9B00172A46 /* UserPost.swift in Sources */,
 				F63CC468251DCC15002F6AEF /* AppDelegate.swift in Sources */,
 				F634E83E251DEBB400172A46 /* ModelAPIResponse.swift in Sources */,
-				F63CC46A251DCC15002F6AEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

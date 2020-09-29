@@ -28,3 +28,34 @@ class UserPost : Mappable {
     }
     
 }
+
+class UserPostAPI : Codable{
+    
+    init() {
+        
+    }
+}
+
+extension UserPostAPI : APIEndpoint{
+    func endpoint() -> String {
+        return "challenge.json"
+    }
+    
+    func dispatch(onSuccess successHandler: @escaping ((_: Array<UserPost> ) -> Void), onFailure failureHandler: @escaping ((_: ModelAPIError?, _: Error) -> Void)) {
+        
+        
+        
+        APIRequest.get(request: self, onSuccess: { (baseAPIResponse) in
+        guard let articles = Mapper<UserPost>().mapArray(JSONString: baseAPIResponse.strJsonResult as String) else {
+                return
+            }
+            successHandler(articles)
+        }) { (baseAPIError, error) in
+            failureHandler(baseAPIError, error)
+        }
+    }
+
+    
+    
+    
+}

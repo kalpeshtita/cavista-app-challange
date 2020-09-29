@@ -11,6 +11,7 @@ target 'cavista-app-challenge' do
   pod 'SwiftLint'
   pod 'SnapKit'
   pod 'ObjectMapper', '~> 3.4'
+  pod 'RealmSwift'
 
   target 'cavista-app-challengeTests' do
     inherit! :search_paths

@@ -13,8 +13,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        getUserPost()
     }
 
+    func getUserPost(){
+        
+        UserPostAPI.init().dispatch(onSuccess: { useposts in
+            
+        }) { (errorResponse, error) in
+            
+        }
+
+    }
 
 }
 

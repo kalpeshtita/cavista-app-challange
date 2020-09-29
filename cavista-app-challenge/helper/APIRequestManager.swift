@@ -14,7 +14,6 @@ import ObjectMapper
 
 protocol APIEndpoint {
     func endpoint() -> String
-    func getDigest() -> String
     func getURLPeremeters() -> String
 }
 
@@ -35,9 +34,8 @@ class APIRequest {
     }()
         
     class func getServerUrl() -> String {
-        let serverURL = Environment().configuration(PlistKey.ServerURL)
-        let httpProtocol = Environment().configuration(PlistKey.ConnectionProtocol)
-        return httpProtocol + serverURL
+        
+        return "https://raw.githubusercontent.com/AxxessTech/Mobile-Projects/master/"
     }
 }
 
